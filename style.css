@@ -22,6 +22,9 @@
     --color9: #E6E7EA;
     --color10: #E5E5E6;
     --color11: #202022;
+    --color12: #101011;
+    --color13: #C1C1C4;
+
 
 }
 
@@ -30,8 +33,14 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 40.3px;
-    background: var(--color5);
-    scroll-behavior: smooth;
+    background: var(--color5) url('./src/assets/svgs/line.svg') top 10% left no-repeat;
+    overflow-x: hidden;
+}
+
+.shadow {
+    position: absolute;
+    z-index: -50;
+    left: 53%;
 }
 
 header {
@@ -115,7 +124,7 @@ header nav ul li a {
     color: var(--color6);
 }
 
-#hero article button {
+button {
     width: 232px;
     height: 60px;
     padding: 16px 32px;
@@ -130,18 +139,12 @@ header nav ul li a {
     cursor: pointer;
 }
 
-#hero article button:hover {
+button:hover {
     opacity: 80%;
 }
 
-#hero article button:active {
+button:active {
     opacity: 70%;
-}
-
-.shadow {
-    position: absolute;
-    z-index: -50;
-    left: 57%;
 }
 
 .cards-container {
@@ -196,7 +199,7 @@ header nav ul li a {
 }
 
 #about {
-    background: var(--color9);
+    background: var(--color9) url('./src/assets/svgs/lineAbout.svg') top 65% right 20% no-repeat;
     width: 100vw;
     height: 1034px;
     display: flex;
@@ -245,6 +248,13 @@ header nav ul li a {
 }
 
 #services {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: transparent url('./src/assets/svgs/line.svg') top 65% left no-repeat;
+}
+
+.services-container {
     width: 1170px;
     height: 729px;
     display: flex;
@@ -253,13 +263,13 @@ header nav ul li a {
     overflow-x: hidden;
 }
 
-#services .title-services {
+.services-container .title-services {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-#services .title-services h2 {
+.services-container .title-services h2 {
     width: 375.5px;
     font-weight: 400;
     font-size: 24px;
@@ -270,19 +280,13 @@ header nav ul li a {
     border-bottom: 1px solid var(--color2);
 }
 
-#services .title-services p {
+.services-container .title-services p {
     width: 474px;
     font-weight: 600;
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.5px;
     color: var(--color7);
-}
-
-.line3 {
-    position: absolute;
-    left: 0;
-    top: 165%;
 }
 
 .slides {
@@ -360,6 +364,14 @@ header nav ul li a {
     justify-content: center;
 }
 
+.line {
+    width: 100vw;
+    background: transparent url('./src/assets/svgs/lineRight.svg') top 60% right no-repeat;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+}
+
 #depoiments {
     width: 1170px;
     height: 840px;
@@ -380,7 +392,7 @@ header nav ul li a {
 .marks {
     position: absolute;
     margin-right: 300px;
-    margin-top: -190px;
+    margin-top: -280px;
 }
 
 .avatar {
@@ -464,12 +476,409 @@ header nav ul li a {
     color: var(--color7);
 }
 
-.line4 {
+#contact {
+    width: 100vw;
+    height: 905px;
+    display: flex;
+    justify-content: center;
+    background: var(--color9);
+}
+
+.container-contact {
+    width: 1170px;
+    display: flex;
+    margin-top: 111px;
+}
+
+.talk-to-me {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.talk-to-me h1 {
+    width: 375.5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 10.5px;
+    color: var(--color2);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color2);
+}
+
+.talk-to-me h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    color: var(--color7);
+}
+
+.talk-to-me p {
+    width: 373px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--color11);
+    margin-top: 24px;
+}
+
+.talk-to-me .phone {
+    margin-top: 48px;
+}
+
+.talk-to-me .contact-us {
+    margin-top: 23px;
+    width: 373px;
+    height: 60px;
+    display: flex;
+    gap: 18px;
+    background: var(--color5);
+    border-radius: 4px;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--color7);
+}
+
+.social-media {
+    margin-top: 53px;
+    display: flex;
+    gap: 16px;
+}
+
+.social-media a img {
+    width: 24px;
+}
+
+form {
+    flex: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 4px;
+    padding: 40px;
+    border: 3px solid var(--color5);
+    background: var(--color3);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--color12);
+}
+
+input {
+    padding: 16px;
+    border: 1px solid var(--color13);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--color12);
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--color12);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--color13);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--color12);
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+}
+
+option {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--color12);
+}
+
+select:focus {
+    outline: none;
+}
+
+.select-input {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.select-input img {
     position: absolute;
-    right: 0;
-    top: 220%;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    width: 24px;
+    margin-right: 16px;
+}
+
+textarea {
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: var(--color12);
+    border: 1px solid var(--color13);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+footer {
+    width: 100vw;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    background: var(--color4);
+}
+
+.container-footer {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-footer img {
+    width: 103px;
+}
+
+.container-footer p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: var(--color8);
+}
+
+@media (max-width:1440px) {
+    body {
+        background: var(--color5) url('./src/assets/svgs/shadow.svg') top right -40% no-repeat;
+    }
+    .shadow {
+        display: none;
+    }
+    header {
+        width: 1115px;
+    }
+    #hero {
+        width: 1115px;
+    }
+    #about {
+        background: var(--color9) url('./src/assets/svgs/lineAbout.svg') top 65% right 12% no-repeat;
+    }
+    #about div {
+        width: 1115px;
+        gap: 70px;
+    }
+    .services-container {
+        width: 1115px;
+    }
+    #services {
+        background: transparent;
+    }
+    .line {
+        background: transparent;
+    }
+    .container-contact {
+        width: 1115px;
+    }
+    .container-footer {
+        width: 1115px;
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        background: var(--color5) url('./src/assets/svgs/shadow.svg') top right -130% no-repeat;
+    }
+    header {
+        width: 919px;
+    }
+    #hero {
+        width: 969px;
+    }
+    #hero article h1 {
+        width: 600px;
+    }
+    #hero article p {
+        width: 550px;
+    }
+    .cards-container {
+        display: flex;
+        gap: 20px;
+    }
+    .card {
+        gap: 15px;
+        border: 3px solid var(--color9);
+        padding: 15px 5px;
+    }
+    #about {
+        background: var(--color9) url('./src/assets/svgs/lineAbout.svg') top 78% right 4% no-repeat;
+        height: 934px;
+    }
+    #about div {
+        width: 919px;
+        justify-content: space-around;
+    }
+    .foto {
+        width: 473px;
+        height: 570px;
+    }
+    .logo {
+        width: 300px;
+        margin-top: 60px;
+    }
+    #about div article p {
+        width: 350px;
+    }
+    .services-container {
+        width: 919px;
+    }
+    #services {
+        background: transparent;
+    }
+    #depoiments {
+        width: 919px;
+        height: 740px;
+    }
+    .triangle {
+        height: 740px;
+        width: 0;
+        border-top: 370px solid transparent;
+        border-bottom: 370px solid transparent;
+        border-right: 110px solid var(--color5);
+    }
+    #depoiments article p {
+        width: 469px;
+    }
+    .title-depoiments h1 {
+        width: 325px;
+    }
+    .line {
+        background: transparent;
+    }
+    .container-contact {
+        width: 919px;
+    }
+    .container-footer {
+        width: 919px;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        background: var(--color5) url('./src/assets/svgs/shadow.svg') top right 300% no-repeat;
+    }
+    header {
+        width: 718px;
+    }
+    header nav ul {
+        gap: 22px;
+    }
+    #hero {
+        margin-top: 10px;
+        width: 718px;
+        background-position: top right -75%;
+        background-size: 600px;
+    }
+    #hero article {
+        padding-top: 20px;
+    }
+    #hero article h1 {
+        width: 469px;
+        margin-top: 0;
+        font-size: 38px;
+    }
+    #hero article p {
+        width: 409px;
+    }
+    .card {
+        gap: 5px;
+    }
+    .search {
+        width: 26px;
+    }
+    .map {
+        width: 34px;
+    }
+    .play {
+        width: 30px;
+    }
+    .card h2 {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    #about {
+        background: var(--color9) url('./src/assets/svgs/lineAbout.svg') top 80% right 4% no-repeat;
+        height: 861px;
+    }
+    #about div {
+        width: 718px;
+        justify-content: space-around;
+        gap: 0;
+    }
+    .foto {
+        width: 273px;
+        height: 370px;
+    }
+    .logo {
+        width: 250px;
+        margin-top: 0px;
+    }
+    #about div article {
+        gap: 20px;
+    }    
+    #about div article p {
+        width: 250px;
+        font-size: 14px;
+    }
+    .services-container {
+        width: 718px;
+        height: 629px;
+    }
 }
