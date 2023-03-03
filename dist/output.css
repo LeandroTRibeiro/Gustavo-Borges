@@ -683,7 +683,7 @@ video {
 }
 
 .animate-fadeInUp1{
-  animation: fadeInUp 1.0s ease-in-out;
+  animation: fadeInUp .5s ease-in-out;
 }
 
 @keyframes fadeInUp{
@@ -699,7 +699,7 @@ video {
 }
 
 .animate-fadeInUp2{
-  animation: fadeInUp 2.0s ease-in-out;
+  animation: fadeInUp .7s ease-in-out;
 }
 
 @keyframes fadeInUp{
@@ -715,7 +715,7 @@ video {
 }
 
 .animate-fadeInUp3{
-  animation: fadeInUp 3.0s ease-in-out;
+  animation: fadeInUp .9s ease-in-out;
 }
 
 .cursor-pointer{

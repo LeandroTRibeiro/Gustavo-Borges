@@ -29,9 +29,9 @@ module.exports = {
     extend: {
       animation: {
         'fadeIn': 'fadeIn 1.5s ease-in-out',
-        'fadeInUp1': 'fadeInUp 1.0s ease-in-out',
-        'fadeInUp2': 'fadeInUp 2.0s ease-in-out',
-        'fadeInUp3': 'fadeInUp 3.0s ease-in-out',
+        'fadeInUp1': 'fadeInUp .5s ease-in-out',
+        'fadeInUp2': 'fadeInUp .7s ease-in-out',
+        'fadeInUp3': 'fadeInUp .9s ease-in-out',
       },
       keyframes: {
         fadeIn: {
