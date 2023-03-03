@@ -178,4 +178,33 @@ rightDepoiments.addEventListener('click', () => {
         count2 = 0;
         return;
     }
-})
+});
+
+const card1 = document.querySelector('.card1');
+const card2 = document.querySelector('.card2');
+const card3 = document.querySelector('.card3');
+
+const isVisible = (el) => {
+    const position = el.getBoundingClientRect();
+    const start = position.top;
+    const end = position.bottom;
+
+    let visible = false;
+
+    if((start >=0) && (end<= window.innerHeight)) {
+        visible = true;
+    }
+
+    return visible
+}
+
+document.addEventListener('scroll', () => {
+    if(isVisible(card1)) {
+        card1.classList.add('animate-fadeInUp1');
+        card1.classList.remove('opacity-0');
+        card2.classList.add('animate-fadeInUp2');
+        card2.classList.remove('opacity-0');
+        card3.classList.add('animate-fadeInUp3');
+        card3.classList.remove('opacity-0');
+    }
+});

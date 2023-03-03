@@ -27,6 +27,28 @@ module.exports = {
       'mobile-s': {'max': '300px'},
     },
     extend: {
+      animation: {
+        'fadeIn': 'fadeIn 1.5s ease-in-out',
+        'fadeInUp1': 'fadeInUp 1.0s ease-in-out',
+        'fadeInUp2': 'fadeInUp 2.0s ease-in-out',
+        'fadeInUp3': 'fadeInUp 3.0s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': {opacity: '0'},
+          '100%': {opacity: '1'}
+        },
+        fadeInUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-50px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      }
     },
   },
   plugins: [],
