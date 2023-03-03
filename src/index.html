@@ -29,7 +29,7 @@ snap-x scroll-pt-10">
             <article class="flex flex-col gap-6 notebook-s:gap-4">
                 <h1 class='text-5xl font-semibold leading-[64px] text-color4 notebook-s:text-4xl notebook-s:leading-[44px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                 <p class="font-medium text-color6 leading-7 notebook-s:text-sm notebook-s:left-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum te soci</p>
-                <button class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">Call to action</button>
+                <a href="https://wa.me/5548996312210?text=Olá+consegui+seu+contato+atravéz+de+seu+site!" target="_blank"><button class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">Call to action</button></a>
             </article>
             <img src="./assets/images/GustavoHero.png" alt="Gustavo Fernandes Borges Advogado" class="max-w-[559px] notebook:max-w-[459px] notebook-s:max-w-[359px] mobile-s:max-w-[319px] drop-shadow-[200px_50px_50px_rgba(0,0,0,0.15)]">
         </div>
@@ -189,6 +189,7 @@ snap-x scroll-pt-10">
                     type="text" 
                     name="name" 
                     id="name"
+                    required
                     class="outline-none rounded p-3 border border-color13 bg-transparent"
                 >
             </label>
@@ -200,13 +201,14 @@ snap-x scroll-pt-10">
                     id="tel"
                     placeholder="(DDD) 00000-0000"
                     class="outline-none rounded p-3 border border-color13 bg-transparent"
+                    required
                 >
             </label>
             <label class="flex flex-col cursor-pointer">
                 <span class="text-color12 leading-7">Área juridica</span>
                 <div class="flex items-center justify-end cursor-pointer">
                     <img src="./assets/svgs/arrowDown.svg" alt="arrow down icon" class="absolute w-5 mr-3">
-                    <select name="juridicalArea" id="juridicalArea" class="outline-none rounded p-3 border border-color13 appearance-none w-full bg-transparent">
+                    <select name="juridicalArea" id="juridicalArea" class="outline-none rounded p-3 border border-color13 appearance-none w-full bg-transparent" required>
                         <option value="Direito familiar"  class="bg-color5">Direito familiar</option>
                         <option value="Direito Civil" class="bg-color5">Direito Civil</option>
                         <option value="Criminal" selected class="bg-color5">Criminal</option>
@@ -221,10 +223,11 @@ snap-x scroll-pt-10">
                     cols="30" 
                     rows="2"
                     class="resize-none outline-none rounded p-3 border border-color13 bg-transparent"
+                    required
                 >
                 </textarea>
             </label>
-            <input type="submit" value="Call to action" class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">
+            <input type="submit" value="Call to action" class="submitBtn w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">
         </form>
     </section>
     <footer class="w-screen bg-color4 flex justify-center p-10">

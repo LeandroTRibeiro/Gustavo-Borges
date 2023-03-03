@@ -208,3 +208,7 @@ document.addEventListener('scroll', () => {
         card3.classList.remove('opacity-0');
     }
 });
+
+document.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
