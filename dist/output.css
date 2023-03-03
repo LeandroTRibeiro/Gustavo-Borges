@@ -535,48 +535,28 @@ video {
   position: absolute;
 }
 
-.right-0{
-  right: 0px;
-}
-
-.right-2{
-  right: 0.5rem;
+.bottom-\[2\%\]{
+  bottom: 2%;
 }
 
 .right-5{
   right: 1.25rem;
 }
 
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.bottom-\[50\]{
-  bottom: 50;
-}
-
-.bottom-\[50\%\]{
-  bottom: 50%;
-}
-
-.bottom-\[80\%\]{
-  bottom: 80%;
-}
-
-.bottom-\[10\%\]{
-  bottom: 10%;
-}
-
-.bottom-\[5\%\]{
-  bottom: 5%;
-}
-
-.bottom-\[2\%\]{
-  bottom: 2%;
-}
-
 .z-10{
   z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .ml-5{
@@ -1140,18 +1120,8 @@ video {
   opacity: 0.8;
 }
 
-.hover\:opacity-70:hover{
-  opacity: 0.7;
-}
-
 .hover\:opacity-90:hover{
   opacity: 0.9;
-}
-
-.hover\:shadow-lg:hover{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .active\:opacity-30:active{
@@ -1160,14 +1130,6 @@ video {
 
 .active\:opacity-70:active{
   opacity: 0.7;
-}
-
-.active\:opacity-20:active{
-  opacity: 0.2;
-}
-
-.active\:opacity-0:active{
-  opacity: 0;
 }
 
 .active\:opacity-80:active{
