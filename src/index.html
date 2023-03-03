@@ -7,7 +7,8 @@
     <title>Gustavo Fernandes Borges</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="flex flex-col items-center bg-color9 overflow-x-hidden"> 
+<body class="flex flex-col items-center bg-color9 overflow-x-hidden overflow-y-scroll scroll-smooth
+snap-x scroll-pt-10"> 
     <header class="w-screen max-w-[1170px] p-10 flex justify-between text-lg tablet:justify-center bg-color5">
         <a href="/">
             <img src='./assets/svgs/logo.svg' alt="Gustavo Fernandes Borges Logo" />
@@ -46,7 +47,7 @@
             <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
         </div>
     </div>
-    <section id="about" class="w-screen flex justify-center bg-color9 mt-[-70px] pt-10 tablet:mt-[-200px]">
+    <section id="about" class="w-screen flex justify-center bg-color9 mt-[-70px] pt-10 tablet:mt-[-100px]">
         <div class="flex max-w-[1170px] p-10 gap-10 tablet:flex-col tablet:items-center">
             <img src="./assets/images/GustavoAbout.png" alt="Gustavo Fernandes Borges Advogado" class="notebook:w-[473px] notebook:h-[515px] notebook-s:w-[373px] notebook-s:h-[415px] tablet:w-fit tablet:h-fit">
             <article class="flex flex-col justify-center gap-10 notebook:gap-5 mt-20 notebook-s:mt-10 tablet:items-center">
@@ -56,47 +57,106 @@
             </article>
         </div>
     </section>
-    <section id="services" class="w-screen max-w-[1170px] py-40 pl-10 bg-color5 flex gap-10 overflow-x-hidden">
-        <div class="flex flex-col gap-4 w-[40%]">
-            <h2 class="text-2xl text-color2 pb-4 border-b border-b-color2">SERVIÇOS</h2>
-            <h3 class="text-5xl leading-[64px] font-semibold">Especialidades para atendimento personalizado</h3>
+    <section id="services" class="w-screen max-w-[1170px] py-40 tablet:py-20 pl-10 mobile-g:pl-5 mobile-s:pl-2 bg-color5 flex tablet:flex-col gap-10 tablet:gap-40">
+        <div class="flex flex-col gap-4 w-[400px] tablet:w-full">
+            <h2 class="text-2xl text-color2 pb-4 border-b border-b-color2 w-[400px] tablet:w-[400px] mobile-g:w-[300px] mobile-g:text-xl mobile-s:w-[290px]">SERVIÇOS</h2>
+            <h3 class="text-4xl text-color7 leading-[64px] font-semibold tablet:pr-10 mobile-g:text-3xl">Especialidades para atendimento personalizado</h3>
         </div>
-        <div class="flex flex-col gap-10">
-                        <div class="flex gap-12 ml-5">
-                            <a id="left" class="w-14 h-14 bg-color9 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
-                                <img src="./assets/svgs/arrowLeft.svg" alt="arrow left icon" class="">
-                            </a>
-                            <a href="#5" id="right" class="w-14 h-14 bg-color9 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
-                                <img src="./assets/svgs/arrowRight.svg" alt="arrow right icon" class="">
-                            </a>
-                        </div>
-            <div class="flex overflow-x-scroll scroll-smooth scroll-ml-5 snap-x">
-                <div id="1" class="snap-start px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 w-[300px] ml-5 mr-5">
+        <div id="carousel" class="flex items-center overflow-x-hidden tablet:overflow-x-scroll scroll-ml-5 snap-x scroll-smooth">
+                <div id="slide1" class="snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 ml-5 mr-5">
                     <img src="./assets/svgs/keyIcon.svg" alt="search icon" class="w-10">
                     <h2 class="font-bold pb-4 border-b border-b-color2">Criminal</h2>
                     <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
                 </div>
-                <div id="2" class="snap-start px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 w-[300px] ml-5 mr-5">
+                <div id="slide2" class="snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
                     <img src="./assets/svgs/personIcon.svg" alt="search icon" class="w-10">
                     <h2 class="font-bold pb-4 border-b border-b-color2">Direito Familiar</h2>
                     <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
                 </div>
-                <div id="3" class="snap-start px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 w-[300px] ml-5 mr-5">
+                <div id="slide3" class="snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
                     <img src="./assets/svgs/gitIcon.svg" alt="search icon" class="w-10">
                     <h2 class="font-bold pb-4 border-b border-b-color2">Direito Civil</h2>
                     <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
                 </div>
-                <div id="4" class="snap-start px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 w-[300px] ml-5 mr-5">
+                <div id="slide4" class="snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
                     <img src="./assets/svgs/keyIcon.svg" alt="search icon" class="w-10">
                     <h2 class="font-bold pb-4 border-b border-b-color2">Criminal</h2>
                     <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
                 </div>
-                <div id="5" class="snap-start px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9 w-[300px] ml-5 mr-5">
+                <div id="slide5" class="snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
                     <img src="./assets/svgs/personIcon.svg" alt="search icon" class="w-10">
                     <h2 class="font-bold pb-4 border-b border-b-color2">Direito Familiar</h2>
                     <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
                 </div>
+                <div id="slide5" class="invisible snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
+                    <img src="./assets/svgs/personIcon.svg" alt="search icon" class="w-10">
+                    <h2 class="font-bold pb-4 border-b border-b-color2">Direito Familiar</h2>
+                    <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
+                </div>
+                <div id="slide5" class="invisible snap-start min-w-[300px] h-[280px] px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color9  ml-5 mr-5">
+                    <img src="./assets/svgs/personIcon.svg" alt="search icon" class="w-10">
+                    <h2 class="font-bold pb-4 border-b border-b-color2">Direito Familiar</h2>
+                    <p class="leading-7	text-center text-color4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
+                </div>
+        </div>
+        <div class="flex gap-12 absolute mt-[-70px] ml-[440px] tablet:mt-[280px] tablet:ml-[0px] mobile-xg:mt-[340px] mobile-g:mt-[250px]">
+            <a id="left" class="w-14 h-14 bg-color9 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
+                <img src="./assets/svgs/arrowLeft.svg" alt="arrow left icon" class="">
+            </a>
+            <a id="right" class="w-14 h-14 bg-color9 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
+                <img src="./assets/svgs/arrowRight.svg" alt="arrow right icon" class="">
+            </a>
+        </div>  
+    </section>
+    <section id="depoiments" class="w-screen max-w-[1170px] flex tablet:flex-col-reverse justify-center items-center">
+        <div class="bg-color9 w-full flex flex-col items-center p-10">
+            <div id="carouselDepoiments" class="flex w-[400px] mobile-g:w-[300px] overflow-x-hidden tablet:overflow-x-scroll scroll-ml-5 snap-x scroll-smooth">
+                <div class="snap-start ml-5 mr-5 min-w-[400px] mobile-g:min-w-[300px]  flex flex-col items-center">
+                    <img src="./assets/svgs/avatar.svg" alt="avatar" class="w-28">
+                    <h2 class="font-semibold text-lg text-color7 mt-2">Marcos Lima</h2>
+                    <p class="text-color11 text-center mt-6 mobile-xg:w-[300px]">“Gustavo demonstrou muito profissionalismo em todo o processo, me mostrou as melhores opções e conseguimos chegar em uma resolução viável, deixo aqui meu muitíssimo obrigado”
+                    </p>
+                </div>
+                <div class="snap-start ml-5 mr-5 min-w-[400px] mobile-g:min-w-[300px] flex flex-col items-center">
+                    <img src="./assets/images/homem1.png" alt="avatar" class="w-28">
+                    <h2 class="font-semibold text-lg text-color7 mt-2">Rafael Lima</h2>
+                    <p class="text-color11 text-center mt-6 mobile-xg:w-[300px]">“Gustavo demonstrou muito profissionalismo em todo o processo, me mostrou as melhores opções e conseguimos chegar em uma resolução viável, deixo aqui meu muitíssimo obrigado”
+                    </p>
+                </div>
+                <div class="snap-start ml-5 mr-5 min-w-[400px] mobile-g:min-w-[300px] flex flex-col items-center">
+                    <img src="./assets/images/mulher1.png" alt="avatar" class="w-28">
+                    <h2 class="font-semibold text-lg text-color7 mt-2">Maria de Fatima</h2>
+                    <p class="text-color11 text-center mt-6 mobile-xg:w-[300px]">“Gustavo demonstrou muito profissionalismo em todo o processo, me mostrou as melhores opções e conseguimos chegar em uma resolução viável, deixo aqui meu muitíssimo obrigado”
+                    </p>
+                </div>
+                <div class="snap-start ml-5 mr-5 min-w-[400px] mobile-g:min-w-[300px] flex flex-col items-center">
+                    <img src="./assets/images/homem2.png" alt="avatar" class="w-28">
+                    <h2 class="font-semibold text-lg text-color7 mt-2">Leandro Ribeiro</h2>
+                    <p class="text-color11 text-center mt-6 mobile-xg:w-[300px]">“Gustavo demonstrou muito profissionalismo em todo o processo, me mostrou as melhores opções e conseguimos chegar em uma resolução viável, deixo aqui meu muitíssimo obrigado”
+                    </p>
+                </div>
+                <div class="snap-start ml-5 mr-5 min-w-[400px] mobile-g:min-w-[300px] flex flex-col items-center">
+                    <img src="./assets/images/mulher2.png" alt="avatar" class="w-28">
+                    <h2 class="font-semibold text-lg text-color7 mt-2">Bruan Telles</h2>
+                    <p class="text-color11 text-center mt-6 mobile-xg:w-[300px]">“Gustavo demonstrou muito profissionalismo em todo o processo, me mostrou as melhores opções e conseguimos chegar em uma resolução viável, deixo aqui meu muitíssimo obrigado”
+                    </p>
+                </div>
+
             </div>
+            <div class="flex gap-12 absolute mt-[300px] mobile-xg:mt-[350px]">
+                <a id="leftDepoiments" class="w-14 h-14 bg-color5 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
+                    <img src="./assets/svgs/arrowLeft.svg" alt="arrow left icon" class="">
+                </a>
+                <a id="rightDepoiments" class="w-14 h-14 bg-color5 flex justify-center items-center rounded transition-all duration-500 ease-in-out hover:bg-color6 hover:opacity-50 active:opacity-30">
+                    <img src="./assets/svgs/arrowRight.svg" alt="arrow right icon" class="">
+                </a>
+            </div>  
+        </div>
+        <div class="h-[580px] border-t-[290px] border-t-transparent border-b-[290px] border-b-transparent border-r-color5 border-r-[70px] tablet:hidden">
+        </div>
+        <div class="bg-color5 h-[580px] tablet:h-full flex flex-col p-10 justify-center notebook-s:pl-5 tablet:p-20">
+            <h2 class="text-2xl text-color2 pb-4 border-b border-b-color2 notebook-s:text-xl">DEPOIMENTOS</h2>
+            <h3 class="text-4xl leading-[64px] font-semibold text-color7 notebook-s:text-3xl">O que meus clientes dizem a meu respeito</h3>
         </div>
     </section>
     <script src="index.js"></script>

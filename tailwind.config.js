@@ -22,8 +22,9 @@ module.exports = {
       'notebook': {'max': '1024px'},
       'notebook-s': {'max': '924px'},
       'tablet': {'max': '768px'},
+      'mobile-xg': {'max': '551px'},
       'mobile-g': {'max': '425px'},
-      'mobile-s': {'max': '390px'},
+      'mobile-s': {'max': '300px'},
     },
     extend: {
     },
