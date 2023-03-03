@@ -9,26 +9,30 @@
 </head>
 <body class="flex flex-col items-center bg-color9 overflow-x-hidden overflow-y-scroll scroll-smooth
 snap-x scroll-pt-10"> 
-    <header class="w-screen max-w-[1170px] p-10 flex justify-between text-lg tablet:justify-center bg-color5">
-        <a href="/">
-            <img src='./assets/svgs/logo.svg' alt="Gustavo Fernandes Borges Logo" />
-        </a>
-        <nav class='flex items-center tablet:hidden'>
-            <ul class='flex gap-10'>
-                <li><a href="#about" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Sobre</a></li>
-                <li><a href="#services" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Serviços</a></li>
-                <li><a href="#depoiments" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Depoimentos</a></li>
-                <li><a href="#contact" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Contato</a></li>
-            </ul>
-        </nav>
+    <header class="w-screen flex justify-center bg-color5">
+        <div class="w-screen max-w-[1170px] p-10 flex justify-between text-lg tablet:justify-center ">
+            <a href="/">
+                <img src='./assets/svgs/logo.svg' alt="Gustavo Fernandes Borges Logo" />
+            </a>
+            <nav class='flex items-center tablet:hidden'>
+                <ul class='flex gap-10'>
+                    <li><a href="#about" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Sobre</a></li>
+                    <li><a href="#services" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Serviços</a></li>
+                    <li><a href="#depoiments" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Depoimentos</a></li>
+                    <li><a href="#contact" class='pb-4 border-b border-transparent hover:border-color2 transition-all ease-in-out duration-500'>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="w-screen max-w-[1170px] p-10 flex tablet:flex-col tablet:items-center tablet:gap-7 tablet:pt-0 bg-color5">
-        <article class="flex flex-col gap-6 notebook-s:gap-4">
-            <h1 class='text-5xl font-semibold leading-[64px] text-color4 notebook-s:text-4xl notebook-s:leading-[44px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <p class="font-medium text-color6 leading-7 notebook-s:text-sm notebook-s:left-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum te soci</p>
-            <button class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">Call to action</button>
-        </article>
-        <img src="./assets/images/GustavoHero.png" alt="Gustavo Fernandes Borges Advogado" class="max-w-[559px] notebook:max-w-[459px] notebook-s:max-w-[359px] mobile-s:max-w-[319px] drop-shadow-[200px_50px_50px_rgba(0,0,0,0.15)]">
+    <section class="w-screen flex justify-center bg-color5">
+        <div class="w-screen max-w-[1170px] p-10 flex tablet:flex-col tablet:items-center tablet:gap-7 tablet:pt-0">
+            <article class="flex flex-col gap-6 notebook-s:gap-4">
+                <h1 class='text-5xl font-semibold leading-[64px] text-color4 notebook-s:text-4xl notebook-s:leading-[44px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p class="font-medium text-color6 leading-7 notebook-s:text-sm notebook-s:left-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum te soci</p>
+                <button class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">Call to action</button>
+            </article>
+            <img src="./assets/images/GustavoHero.png" alt="Gustavo Fernandes Borges Advogado" class="max-w-[559px] notebook:max-w-[459px] notebook-s:max-w-[359px] mobile-s:max-w-[319px] drop-shadow-[200px_50px_50px_rgba(0,0,0,0.15)]">
+        </div>
     </section>
     <div class="w-screen max-w-[1170px] p-10 flex tablet:flex-col tablet:mt-[-45%] mobile-g:mt-[-65%] gap-5 mt-[-15%] z-10">
         <div class="px-4 py-5 flex flex-col items-center justify-center gap-5 border-2 border-color9 rounded bg-color5 shadow-2xl">
@@ -159,6 +163,75 @@ snap-x scroll-pt-10">
             <h3 class="text-4xl leading-[64px] font-semibold text-color7 notebook-s:text-3xl">O que meus clientes dizem a meu respeito</h3>
         </div>
     </section>
+    <section id="contact" class="w-screen max-w-[1170px] flex tablet:flex-col tablet:items-center p-10 mt-20 gap-10">
+        <div class="">
+            <h2 class="text-2xl text-color2 pb-4 border-b border-b-color2 notebook-s:text-xl">CONTATO</h2>
+            <h3 class="text-4xl leading-[64px] font-semibold text-color7 notebook-s:text-3xl">Fale comigo</h3>
+            <p class="text-color11 leading-7">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est </p>
+            <a href="tel:+5548996312210" target="_blank" class="flex gap-7 rounded p-4 bg-color5 mt-12 min-w-[300px]">
+                <img src="./assets/svgs/phoneIcon.svg" alt="phone icon">
+                48 9631-2210
+            </a>
+            <a href="mailto:gustavoborges@gmail.com" target="_blank" class="flex gap-7 rounded p-4 bg-color5 mt-6 min-w-[300px]">
+                <img src="./assets/svgs/emailIcon.svg" alt="email icon">
+                gustavoborges@gmail.com
+            </a>
+            <div class="flex gap-4 tablet:gap-10 mt-14 tablet:justify-center">
+                <a href="https://www.instagram.com/advgustavob/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="./assets/svgs/instagranIcon.svg" alt="instagran icon" class="tablet:w-10"></a>
+                <a href="https://www.linkedin.com/in/gustavo-fernandes-borges-b263231a1/" target="_blank"><img src="./assets/svgs/linkedinIcon.svg" alt="linkedin icon" class="tablet:w-10"></a>
+            </div>
+        </div>
+        <form class="flex flex-col rounded bg-color5 border-2 border-color3 p-10 gap-7 w-[700px] tablet:w-[400px] mobile-g:w-[350px] mobile-s:w-[300px]" action="POST">
+            <label class="flex flex-col">
+                <span class="text-color12 leading-7">Seu nome</span>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                    class="outline-none rounded p-3 border border-color13 bg-transparent"
+                >
+            </label>
+            <label class="flex flex-col">
+                <span class="text-color12 leading-7">Telefone para contato</span>
+                <input 
+                    type="tel" 
+                    name="tel" 
+                    id="tel"
+                    placeholder="(DDD) 00000-0000"
+                    class="outline-none rounded p-3 border border-color13 bg-transparent"
+                >
+            </label>
+            <label class="flex flex-col cursor-pointer">
+                <span class="text-color12 leading-7">Área juridica</span>
+                <div class="flex items-center justify-end cursor-pointer">
+                    <img src="./assets/svgs/arrowDown.svg" alt="arrow down icon" class="absolute w-5 mr-3">
+                    <select name="juridicalArea" id="juridicalArea" class="outline-none rounded p-3 border border-color13 appearance-none w-full bg-transparent">
+                        <option value="Direito familiar"  class="bg-color5">Direito familiar</option>
+                        <option value="Direito Civil" class="bg-color5">Direito Civil</option>
+                        <option value="Criminal" selected class="bg-color5">Criminal</option>
+                    </select>
+                </div> 
+            </label>
+            <label class="flex flex-col">
+                <span class="text-color12 leading-7">Informações Adicionais</span>
+                <textarea 
+                    name="moreInfo" 
+                    id="moreInfo" 
+                    cols="30" 
+                    rows="2"
+                    class="resize-none outline-none rounded p-3 border border-color13 bg-transparent"
+                >
+                </textarea>
+            </label>
+            <input type="submit" value="Call to action" class="w-fit tablet:w-full px-16 py-4 bg-color7 rounded transition-all ease-in-out duration-500 hover:opacity-80 active:opacity-70 text-color8">
+        </form>
+    </section>
+    <footer class="w-screen bg-color4 flex justify-center p-10">
+        <div class="w-screen max-w-[1170px] flex justify-between items-center mobile-xg:flex-col mobile-xg:gap-5">
+            <img src="./assets/svgs/logoFooter.svg" alt="Gustavo Fernandes Borges Logo">
+            <p class="text-xs text-color5 text-center">©Gustavo Fernanders Borges todos os direitos reservados</p>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
