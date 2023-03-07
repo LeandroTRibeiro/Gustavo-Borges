@@ -656,6 +656,34 @@ video {
   width: 100vw;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[50\]{
+  width: 50;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[50vw\]{
+  width: 50vw;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-\[573px\]{
+  width: 573px;
+}
+
 .min-w-\[300px\]{
   min-width: 300px;
 }
@@ -670,6 +698,10 @@ video {
 
 .max-w-\[559px\]{
   max-width: 559px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 @keyframes fadeIn{
@@ -971,6 +1003,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1181,6 +1217,10 @@ video {
 
   .notebook-s\:pl-5{
     padding-left: 1.25rem;
+  }
+
+  .notebook-s\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .notebook-s\:text-3xl{
