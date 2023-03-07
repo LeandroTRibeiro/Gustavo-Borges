@@ -1207,6 +1207,18 @@ video {
     width: 373px;
   }
 
+  .notebook-s\:w-\[65\]{
+    width: 65;
+  }
+
+  .notebook-s\:w-\[65\%\]{
+    width: 65%;
+  }
+
+  .notebook-s\:w-\[70\%\]{
+    width: 70%;
+  }
+
   .notebook-s\:max-w-\[359px\]{
     max-width: 359px;
   }
@@ -1296,6 +1308,18 @@ video {
   }
 
   .tablet\:w-full{
+    width: 100%;
+  }
+
+  .tablet\:w-\[\]{
+    width: ;
+  }
+
+  .tablet\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .tablet\:w-\[100\%\]{
     width: 100%;
   }
 
