@@ -615,6 +615,30 @@ video {
   height: 580px;
 }
 
+.h-\[715px\]{
+  height: 715px;
+}
+
+.h-\[573px\]{
+  height: 573px;
+}
+
+.max-h-\[573px\]{
+  max-height: 573px;
+}
+
+.max-h-px{
+  max-height: 1px;
+}
+
+.max-h-\[px\]{
+  max-height: px;
+}
+
+.max-h-\[715px\]{
+  max-height: 715px;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -656,6 +680,26 @@ video {
   width: 100vw;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[559px\]{
+  width: 559px;
+}
+
+.w-\[573px\]{
+  width: 573px;
+}
+
+.w-\[5px\]{
+  width: 5px;
+}
+
+.w-\[px\]{
+  width: px;
+}
+
 .min-w-\[300px\]{
   min-width: 300px;
 }
@@ -670,6 +714,10 @@ video {
 
 .max-w-\[559px\]{
   max-width: 559px;
+}
+
+.max-w-\[573px\]{
+  max-width: 573px;
 }
 
 @keyframes fadeIn{
@@ -1133,6 +1181,22 @@ video {
     height: 515px;
   }
 
+  .notebook\:max-h-\[459px\]{
+    max-height: 459px;
+  }
+
+  .notebook\:max-h-\[px\]{
+    max-height: px;
+  }
+
+  .notebook\:max-h-\[7px\]{
+    max-height: 7px;
+  }
+
+  .notebook\:max-h-\[615px\]{
+    max-height: 615px;
+  }
+
   .notebook\:w-72{
     width: 18rem;
   }
@@ -1143,6 +1207,10 @@ video {
 
   .notebook\:max-w-\[459px\]{
     max-width: 459px;
+  }
+
+  .notebook\:max-w-\[473px\]{
+    max-width: 473px;
   }
 
   .notebook\:gap-5{
@@ -1163,6 +1231,18 @@ video {
     height: 415px;
   }
 
+  .notebook-s\:max-h-\[359px\]{
+    max-height: 359px;
+  }
+
+  .notebook-s\:max-h-\[px\]{
+    max-height: px;
+  }
+
+  .notebook-s\:max-h-\[515px\]{
+    max-height: 515px;
+  }
+
   .notebook-s\:w-60{
     width: 15rem;
   }
@@ -1173,6 +1253,10 @@ video {
 
   .notebook-s\:max-w-\[359px\]{
     max-width: 359px;
+  }
+
+  .notebook-s\:max-w-\[373px\]{
+    max-width: 373px;
   }
 
   .notebook-s\:gap-4{
@@ -1372,6 +1456,18 @@ video {
 }
 
 @media (max-width: 300px){
+  .mobile-s\:max-h-\[319px\]{
+    max-height: 319px;
+  }
+
+  .mobile-s\:max-h-\[px\]{
+    max-height: px;
+  }
+
+  .mobile-s\:max-h-\[415px\]{
+    max-height: 415px;
+  }
+
   .mobile-s\:w-\[290px\]{
     width: 290px;
   }
@@ -1382,6 +1478,10 @@ video {
 
   .mobile-s\:max-w-\[319px\]{
     max-width: 319px;
+  }
+
+  .mobile-s\:max-w-\[273px\]{
+    max-width: 273px;
   }
 
   .mobile-s\:pl-2{
